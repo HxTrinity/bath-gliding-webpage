@@ -1,0 +1,298 @@
+<style>
+  .reimburse-card {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  .reimburse-card-blue { border-top: 4px solid #0ea5e9; }
+  .reimburse-card-green { border-top: 4px solid #16a34a; }
+
+  .reimburse-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 0.5rem;
+  }
+  .reimburse-card p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+  }
+  .reimburse-card p:last-child { margin: 0; }
+
+  .reimburse-badge {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 6px;
+    width: fit-content;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+  }
+  .badge-blue { background: #e0f2fe; color: #0369a1; }
+  .badge-green { background: #f0fdf4; color: #166534; }
+
+  .reimburse-notice {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+  .reimburse-notice p {
+    font-size: 15px;
+    color: #78350f !important;
+    margin: 0 0 0.4rem;
+    line-height: 1.7;
+  }
+  .reimburse-notice p:last-child { margin: 0; }
+  .reimburse-notice-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #b45309;
+    margin-bottom: 6px;
+  }
+
+  .price-highlight {
+    display: inline-block;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: #166534;
+    margin: 0.75rem 0 1rem;
+  }
+
+  .timeline { display: flex; flex-direction: column; gap: 0; margin: 1rem 0; }
+  .tl-step { display: flex; gap: 16px; }
+  .tl-left { display: flex; flex-direction: column; align-items: center; }
+  .tl-dot {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: #1d4ed8; color: #fff;
+    font-size: 14px; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .tl-line { width: 2px; background: #dbeafe; flex: 1; min-height: 12px; }
+  .tl-step:last-child .tl-line { display: none; }
+  .tl-body {
+    padding: 4px 0 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #000;
+  }
+  .tl-body code {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 13px;
+    color: #000;
+  }
+
+  .app-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .app-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid;
+    transition: background 0.15s, color 0.15s;
+  }
+  .app-link-ios {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+  }
+  .app-link-ios:hover { background: #222; }
+  .app-link-android {
+    background: #fff;
+    color: #1a73e8;
+    border-color: #1a73e8;
+  }
+  .app-link-android:hover { background: #e8f0fe; }
+
+  .pdf-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 1rem 0;
+  }
+  .pdf-field {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+  }
+  .pdf-field strong {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
+  .btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0; }
+  .btn-primary {
+    display: inline-block;
+    background-color: #003865;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.15s;
+  }
+  .btn-primary:hover { background-color: #00264d; }
+  .btn-secondary {
+    display: inline-block;
+    background-color: #fff;
+    color: #003865;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #003865;
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn-secondary:hover { background-color: #003865; color: #fff; }
+</style>
+
+<h2>Reimburse your Fuel Costs ⛽</h2>
+
+<p style="font-size:16px;color:#000;">If you drove to the airfield and back, you can reclaim your fuel cost from the University of Bath to the airfield and back.</p>
+
+<div class="price-highlight">£11.50 per trip (25p/mile, 26 miles each way)</div>
+
+<div class="reimburse-card reimburse-card-blue">
+  <span class="reimburse-badge badge-blue">I have the £10 membership</span>
+  <h3>Student Expenses App 📱</h3>
+  <p>Use the Student Expenses App to submit your mileage claim. It sounds like a lot, but after you've done it once, it becomes really fast! Follow the steps below carefully.</p>
+
+  <div class="timeline">
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">1</div><div class="tl-line"></div></div>
+      <div class="tl-body">
+        Download the <strong>Student Expenses App</strong> and log in or create an account using your Bath email credentials.
+        <div class="app-links">
+          <a class="app-link app-link-ios" href="https://apps.apple.com/gb/app/student-expenses/id1501332908" target="_blank" rel="noopener noreferrer">Download via the App Store</a>
+          <a class="app-link app-link-android" href="https://play.google.com/store/apps/details?id=com.konnekt365.studentexpenses&hl=en_GB" target="_blank" rel="noopener noreferrer">Download via the Google Play Store</a>
+        </div>
+      </div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">2</div><div class="tl-line"></div></div>
+      <div class="tl-body">Go to <strong>Settings</strong>, then <strong>Bank Details</strong>, and fill in your bank details.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">3</div><div class="tl-line"></div></div>
+      <div class="tl-body">Return back to the home page.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">4</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press the <strong>Expenses</strong> button on the bottom left.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">5</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press <strong>New</strong> (bottom right).</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">6</div><div class="tl-line"></div></div>
+      <div class="tl-body">Set <strong>Club or Society</strong> to <code>Gliding</code> and <strong>Entry Type</strong> to <code>Personal expense</code>.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">7</div><div class="tl-line"></div></div>
+      <div class="tl-body">Set the <strong>Claim date</strong> to the date you are filling the form out.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">8</div><div class="tl-line"></div></div>
+      <div class="tl-body">Set <strong>Currency</strong> to <code>GBP Pound Sterling</code>.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">9</div><div class="tl-line"></div></div>
+      <div class="tl-body">Set the <strong>Reference</strong> to: <code>GLI73030 - [FULL NAME] - [TODAY'S DATE DD-MM-YY]</code> in capitals.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">10</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press <strong>Details</strong> at the bottom.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">11</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press <strong>Add</strong> (bottom right).</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">12</div><div class="tl-line"></div></div>
+      <div class="tl-body">Select <strong>Expense Type</strong> as <code>Car Mileage SA</code>.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">13</div><div class="tl-line"></div></div>
+      <div class="tl-body">Select the <strong>Line date</strong> to the day you went gliding.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">14</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press <strong>Journey</strong>. Turn on <strong>Return Journey</strong>. Set <strong>Journey Start</strong> to <code>University of Bath</code> and <strong>Journey Destination</strong> to <code>Bath Wilts and North Dorset Gliding Club</code>. This should calculate to <strong>£11.50</strong>.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">15</div><div class="tl-line"></div></div>
+      <div class="tl-body">Add a <strong>Description</strong> of: <code>[Full Name] drive to the airfield and back</code>.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">16</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press the <strong>check arrow</strong> on the top right to save as a draft.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left"><div class="tl-dot">17</div><div class="tl-line"></div></div>
+      <div class="tl-body">Press <strong>Submit for Approval</strong> and select a member of the committee.</div>
+    </div>
+  </div>
+</div>
+
+<div class="reimburse-card reimburse-card-green">
+  <span class="reimburse-badge badge-green">I do not have the £10 membership</span>
+  <h3>Financial Request Form 📝</h3>
+  <p>Open the financial request form using the button below. You can type directly into it in Google Chrome. Fill in the following fields only, everything else can be left blank:</p>
+
+  <div class="pdf-fields">
+    <div class="pdf-field"><strong>Name and email</strong>Your own name and bath email address</div>
+    <div class="pdf-field"><strong>Sort code</strong>Your bank sort code</div>
+    <div class="pdf-field"><strong>Account number</strong>Your bank account number</div>
+    <div class="pdf-field"><strong>Department</strong>Gliding</div>
+    <div class="pdf-field"><strong>Expense type</strong>Car Mileage SA</div>
+    <div class="pdf-field"><strong>Event</strong>Taster Flight [DD-MM-YYYY]</div>
+    <div class="pdf-field"><strong>Description of expenditure</strong>Drove from University of Bath to Airfield. On the Expenses app it works out to be £11.50 (26 miles), I don't have access to it as I'm on the taster flight and do not require a membership.</div>
+    <div class="pdf-field"><strong>Amount</strong>£11.50</div>
+    <div class="pdf-field"><strong>Requested by</strong>Your full name</div>
+    <div class="pdf-field"><strong>Username</strong>Your Bath username</div>
+  </div>
+
+  <div class="reimburse-notice">
+    <p class="reimburse-notice-label">Submitting the form</p>
+    <p>Once completed, press the <strong>Download</strong> button (top right on Google Chrome) and select <strong>With your changes</strong>. Then email the PDF to <a href="mailto:sufinance@bath.ac.uk" style="color:#b45309;font-weight:600;">sufinance@bath.ac.uk</a>.</p>
+  </div>
+
+  <div class="btn-row">
+    <a class="btn-primary" href="https://www.thesubath.com/pageassets/finance/interactive_forms/Editable-Online-Financial-Request-Form.pdf" target="_blank" rel="noopener noreferrer">Open Financial Request Form</a>
+    <a class="btn-secondary" href="mailto:sufinance@bath.ac.uk">Email SU Finance</a>
+  </div>
+</div>
