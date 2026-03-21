@@ -28,8 +28,12 @@
   }
   .mem-card.mem-card-taster { border-top: 4px solid #0ea5e9; }
   .mem-card.mem-card-solo { border-top: 4px solid #7c3aed; }
+  .mem-card.mem-card-account { border-top: 4px solid #059669; }
+  .mem-card.mem-card-fuel { border-top: 4px solid #d97706; }
   .mem-card-taster:hover { border-color: #0ea5e9; box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1); }
   .mem-card-solo:hover { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1); }
+  .mem-card-account:hover { border-color: #059669; box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1); }
+  .mem-card-fuel:hover { border-color: #d97706; box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1); }
   .mem-card:active { transform: scale(0.985); }
   .mem-badge {
     display: inline-block;
@@ -40,11 +44,23 @@
   }
   .mem-card-taster .mem-badge { background: #e0f2fe; color: #0369a1; }
   .mem-card-solo .mem-badge { background: #f5f3ff; color: #5b21b6; }
+  .mem-card-account .mem-badge { background: #d1fae5; color: #065f46; }
+  .mem-card-fuel .mem-badge { background: #fef3c7; color: #92400e; }
   .mem-title { font-size: 17px; font-weight: 600; margin: 0; color: #000; }
   .mem-desc { font-size: 14px; color: #000; line-height: 1.5; margin: 0; flex: 1; }
+  .mem-note {
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-top: 2px;
+  }
+  .mem-card-account .mem-note { background: #fef9c3; color: #713f12; border: 1px solid #fde68a; }
   .mem-cta { font-size: 13px; font-weight: 500; margin-top: 4px; }
   .mem-card-taster .mem-cta { color: #0369a1; }
   .mem-card-solo .mem-cta { color: #7c3aed; }
+  .mem-card-account .mem-cta { color: #059669; }
+  .mem-card-fuel .mem-cta { color: #d97706; }
 
   .wwd-grid {
     display: grid;
@@ -97,7 +113,24 @@
   .logo-row a:hover { border-color: #93c5fd; }
   .logo-row img { display: block; }
 </style>
+<h3>What We Do</h3>
 
+<div class="wwd-grid">
+  <div class="wwd-card">
+    <strong>Sustainable Flying 🍃</strong>
+    <span>We fly from Bath Wilts and North Dorset Gliding Club. The club has 3 two-seater and 3 single-seater gliders, a touring motor glider, winch launch, and aerotows.</span>
+  </div>
+  <div class="wwd-card">
+    <strong>Taster & Training Flights ✈️ </strong>
+    <span>All instruction is given free by volunteers. You can learn to fly gliders for a very reasonable price and work through the syllabus towards flying solo. Or experience a taster flight!</span>
+  </div>
+  <div class="wwd-card">
+    <strong>Stunning Views 🌄</strong>
+    <span>Soar over beautiful countryside and have views of the Bristol Channel!</span>
+  </div>
+</div>
+
+<hr />
 <h3>Types of Flying Available</h3>
 <p>This year, we have two types of flying available:</p>
 
@@ -118,21 +151,22 @@
 
 <hr />
 
-<h3>What We Do</h3>
+<h3>Manage Your Flying</h3>
 
-<div class="wwd-grid">
-  <div class="wwd-card">
-    <strong>Flying from just 25 miles away</strong>
-    <span>We fly from Bath Wilts and North Dorset Gliding Club. The club has 3 two-seater and 3 single-seater gliders, a touring motor glider, winch launch, and aerotows.</span>
-  </div>
-  <div class="wwd-card">
-    <strong>The cheapest way to fly</strong>
-    <span>All instruction is given free by volunteers. You can learn to fly gliders for a very reasonable price and work through the syllabus towards flying solo.</span>
-  </div>
-  <div class="wwd-card">
-    <strong>Much more than just flying</strong>
-    <span>Soar over beautiful countryside, compete in inter-university competitions, and build skills towards solo flight. The sky is no longer the limit!</span>
-  </div>
+<div class="mem-grid">
+  <a class="mem-card mem-card-account" href="https://www.thesubath.com/gliding/products/">
+    <span class="mem-badge">Training Programme</span>
+    <p class="mem-title">Manage Your Gliding Account Balance 💳</p>
+    <p class="mem-desc">Top up your gliding account, view your balance, and request a refund.</p>
+    <p class="mem-note">⚠️ This is not for people who are on the taster flights. It should only be used by members on the training programme.</p>
+    <span class="mem-cta">Manage account →</span>
+  </a>
+  <a class="mem-card mem-card-fuel" href="https://www.thesubath.com/gliding/fuel_cost/">
+    <span class="mem-badge">Driver Reimbursement</span>
+    <p class="mem-title">Fuel Cost Reimbursement ⛽</p>
+    <p class="mem-desc">Did you help drive us to the airfield? Press me to reimburse your fuel cost!</p>
+    <span class="mem-cta">Claim fuel costs →</span>
+  </a>
 </div>
 
 <hr />
