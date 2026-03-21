@@ -1,0 +1,194 @@
+<style>
+  .prog-card {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  .prog-card-purple { border-top: 4px solid #7c3aed; }
+  .prog-card-blue { border-top: 4px solid #0ea5e9; }
+  .prog-card-green { border-top: 4px solid #16a34a; }
+  .prog-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+  }
+  .prog-badge {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 6px;
+    width: fit-content;
+  }
+  .badge-purple { background: #f5f3ff; color: #5b21b6; }
+  .badge-blue { background: #e0f2fe; color: #0369a1; }
+  .badge-green { background: #f0fdf4; color: #166534; }
+  .prog-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+  }
+  .prog-card p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+  }
+  .prog-card p:last-child { margin: 0; }
+  .prog-card .notice {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 15px;
+    color: #78350f;
+    margin-top: 0.75rem;
+  }
+  .prog-card .notice em { font-style: italic; }
+
+  .prog-divider { border: none; border-top: 1px solid #f3f4f6; margin: 1.5rem 0; }
+
+  .price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 1rem 0;
+  }
+  .price-item {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+  }
+  .price-item strong { display: block; font-size: 18px; color: #000; margin-bottom: 2px; }
+
+  .taster-redirect {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+  }
+  .taster-redirect-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #b45309;
+    margin-bottom: 6px;
+  }
+  .taster-redirect p {
+    font-size: 15px;
+    color: #78350f !important;
+    margin: 0 0 0.4rem;
+    line-height: 1.7;
+  }
+  .taster-redirect p:last-child { margin: 0; }
+  .taster-redirect a { color: #b45309; font-weight: 600; }
+
+  .btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0; }
+  .btn-primary {
+    display: inline-block;
+    background-color: #003865;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.15s;
+  }
+  .btn-primary:hover { background-color: #00264d; }
+  .btn-secondary {
+    display: inline-block;
+    background-color: #fff;
+    color: #003865;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #003865;
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn-secondary:hover { background-color: #003865; color: #fff; }
+</style>
+
+<h2>Our Training Programme & Licensed Flights 🪪</h2>
+
+<div class="prog-card prog-card-purple">
+  <div class="prog-card-header">
+    <span class="prog-badge badge-purple">Starting off</span>
+  </div>
+  <h2>Newbie to Solo</h2>
+  <br />
+  <p>For those who are really passionate about aviation and want to fly independently, we offer a programme with limited spaces.</p>
+  <p>Applications normally open during September and October. These applications can be <strong>quite competitive</strong> and you will need to demonstrate a strong passion for aviation and a love for flying! Prior flying experience is not required, but it does help. Extensive hours in flight simulators also counts as experience.</p>
+  <p>Going solo means you can fly alone, only with the club we are hosted by.</p>
+  <div class="notice">
+    <strong>Attendance requirement:</strong> If you are on this programme, you are required to register your attendance and attend frequently. We will give up your slot to someone else if you do not. <em>Exceptions can be made.</em>
+  </div>
+</div>
+
+<div class="prog-card prog-card-blue">
+  <div class="prog-card-header">
+    <span class="prog-badge badge-blue">Progression</span>
+  </div>
+  <h2>Solo to SPL</h2>
+  <br />
+  <p>For those who have already gone solo and want to progress further, our affiliated club has multiple members who have achieved their SPL from the UK Civil Aviation Authority and are happy to guide you through obtaining yours.</p>
+  <p>Having an SPL allows you to fly cross-country and enter gliding competitions across the UK!</p>
+  <div class="notice">
+    <strong>Solo requirement:</strong> You must have already gone solo with our host club!
+  </div>
+</div>
+
+<div class="prog-card prog-card-green">
+  <div class="prog-card-header">
+    <span class="prog-badge badge-green">Already licensed</span>
+  </div>
+  <h2>SPL or PPL already?</h2>
+  <br />
+  <p>Fill out the application during September and October, and select that you already hold an SPL or PPL.</p>
+</div>
+
+<hr />
+
+<h2>Prices 💷</h2>
+<p style="font-size:16px;color:#000;">You will be charged our affiliate's price. You can get an hour of tuition for under <strong>£35</strong>, which is far better value than going private!</p>
+
+<p style="font-size:16px;color:#000;margin-bottom:0.5rem;"><strong>Before you go gliding, you will need:</strong></p>
+
+<div class="price-grid">
+  <div class="price-item">
+    <strong>£10</strong>
+    SU Gliding Society membership
+  </div>
+  <div class="price-item">
+    <strong>Acceptance letter</strong>
+    From SU Gliding for the solo programme
+  </div>
+  <div class="price-item">
+    <strong>£30 minimum credit</strong>
+    In your gliding account before your first flight
+  </div>
+</div>
+
+<div class="taster-redirect">
+  <p class="taster-redirect-label">Selected for a taster flight?</p>
+  <p>If you have been selected to attend a taster flight, do not top up credit here. Taster flights are purchased separately.</p>
+  <p>Head to the <a href="https://www.thesubath.com/gliding/tasterflight/" target="_blank" rel="noopener noreferrer">taster flight page here</a> to purchase your ticket instead.</p>
+</div>
+
+<div class="btn-row">
+  <a class="btn-primary" href="https://www.thesubath.com/shop/product/10182890/" target="_blank" rel="noopener noreferrer">Top up credit</a>
+  <a class="btn-secondary" href="https://computingservices-my.sharepoint.com/:x:/g/personal/jl4010_bath_ac_uk/IQAvB0Gsy_YdRJrKZWeypjUmAUyBpaCS9eqKQlxO34y9l90?e=jcJIfq" target="_blank" rel="noopener noreferrer">View account balance</a>
+</div>
+
+<p style="font-size:15px;color:#000;">To view your balance, sign in with your University of Bath email address. For credit refunds, email <a href="mailto:su-gliding@bath.ac.uk">su-gliding@bath.ac.uk</a>.</p>

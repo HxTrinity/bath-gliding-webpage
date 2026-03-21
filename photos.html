@@ -1,0 +1,82 @@
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+    padding: 1rem 0;
+  }
+  .gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    transition: box-shadow 0.15s;
+  }
+  .gallery-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .gallery-item a { display: block; }
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  .gallery-item:hover img { transform: scale(1.02); }
+</style>
+
+<h2>Photo Gallery 📸</h2>
+
+<div class="gallery-grid">
+
+  <!-- Photo 1: change src to the image path and href to the full-size image path -->
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/Aerotow.jpg" target="_blank">
+      <img src="/pageassets/gliding/photos/Aerotow.jpg" alt="Aerotow" />
+    </a>
+  </div>
+
+  <!-- Photo 2 -->
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/Glider_Late_Final.jpg" target="_blank">
+      <img src="/pageassets/gliding/photos/Glider_Late_Final.jpg" alt="Glider on late final" />
+    </a>
+  </div>
+
+  <!-- Photo 3 -->
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/Glider-Head_On.jpg" target="_blank">
+      <img src="/pageassets/gliding/photos/Glider-Head_On.jpg" alt="Glider head on" />
+    </a>
+  </div>
+
+  <!-- Photo 4 -->
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/Glider-Launching.jpg" target="_blank">
+      <img src="/pageassets/gliding/photos/Glider-Launching.jpg" alt="Glider launching" />
+    </a>
+  </div>
+
+  <!-- Photo 5 -->
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/IMG_0050.JPG" target="_blank">
+      <img src="/pageassets/gliding/photos/IMG_0050.JPG" alt="Club photo" />
+    </a>
+  </div>
+
+  <!-- Photo 6 -->
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/102_2902.JPG" target="_blank">
+      <img src="/pageassets/gliding/photos/102_2902.JPG" alt="At the airfield" />
+    </a>
+  </div>
+
+  <!-- TO ADD A NEW PHOTO: copy the block below, uncomment it, and update the src, href and alt -->
+  <!--
+  <div class="gallery-item">
+    <a href="/pageassets/gliding/photos/YOUR_PHOTO.jpg" target="_blank">
+      <img src="/pageassets/gliding/photos/YOUR_PHOTO.jpg" alt="Your description" />
+    </a>
+  </div>
+  -->
+
+</div>

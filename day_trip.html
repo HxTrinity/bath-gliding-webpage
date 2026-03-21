@@ -1,0 +1,112 @@
+<style>
+  .day-section { margin: 1.5rem 0; }
+  .day-section h3 { font-size: 20px; font-weight: 600; margin: 0 0 1rem; }
+
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .tl-step { display: flex; gap: 16px; }
+  .tl-left { display: flex; flex-direction: column; align-items: center; }
+  .tl-dot { width: 32px; height: 32px; border-radius: 50%; background: #1d4ed8; color: #fff; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .tl-line { width: 2px; background: #dbeafe; flex: 1; min-height: 12px; }
+  .tl-step:last-child .tl-line { display: none; }
+  .tl-body { padding: 2px 0 20px; font-size: 16px; line-height: 1.6; color: #000; }
+
+  .bring-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .bring-card { padding: 1rem; border-radius: 10px; border: 1px solid #e5e7eb; background: #fff; }
+  .bring-card strong { display: block; font-size: 16px; font-weight: 600; color: #000; margin-bottom: 4px; }
+  .bring-card span { font-size: 15px; color: #000; line-height: 1.5; }
+
+  .notice-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 10px; padding: 1rem 1.25rem; margin: 0.75rem 0; }
+  .notice-box p { margin: 0 0 0.5rem; font-size: 16px; color: #78350f; line-height: 1.6; }
+  .notice-box p:last-child { margin: 0; }
+  .notice-label { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #b45309; margin-bottom: 8px; }
+</style>
+
+<h2>A Typical Gliding Day</h2>
+
+<div class="day-section">
+  <h3>How the day runs (ish..!)</h3>
+  <div class="timeline">
+    <div class="tl-step">
+      <div class="tl-left">
+        <div class="tl-dot">1</div>
+        <div class="tl-line"></div>
+      </div>
+      <div class="tl-body"><strong style="color:#000;">08:00</strong> Leave Bath</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left">
+        <div class="tl-dot">2</div>
+        <div class="tl-line"></div>
+      </div>
+      <div class="tl-body"><strong style="color:#000;">09:00 - 09:15 - Club briefing</strong><br />
+      A chance for new members to introduce themselves. Mostly aimed at solo pilots and instructors.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left">
+        <div class="tl-dot">3</div>
+        <div class="tl-line"></div>
+      </div>
+      <div class="tl-body"><strong style="color:#000;">09:15 - 10:15 - Setup &amp; safety briefing</strong><br />
+      New pilots fill out membership forms, then help push out gliders and set up the launch point. The trip leader will brief new pilots on airfield safety, controls, instruments, parachutes, and the bail-out procedure.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left">
+        <div class="tl-dot">4</div>
+        <div class="tl-line"></div>
+      </div>
+      <div class="tl-body"><strong style="color:#000;">10:15 - 16:00 - Flying time!</strong><br />
+      Throughout the day, you will also learn to drive gators to retrieve gliders, help launch, and fill out the logs.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-left">
+        <div class="tl-dot">5</div>
+        <div class="tl-line"></div>
+      </div>
+      <div class="tl-body"><strong style="color:#000;">16:00 - 18:00 - Wrap up</strong><br />
+      Flying finishes (time of year dependent). Everyone helps put away gliders and equipment.</div>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="day-section">
+  <h3>What to bring</h3>
+  <div class="bring-grid">
+    <div class="bring-card">
+      <strong>Plenty of water</strong>
+      <span>The airfield is very exposed. Easy to get dehydrated, especially in summer. Bring a bottle at minimum.</span>
+    </div>
+    <div class="bring-card">
+      <strong>Food</strong>
+      <span>Don't rely on food being available. Bring your own, and some change in case bacon rolls are on offer!</span>
+    </div>
+    <div class="bring-card">
+      <strong>Suitable footwear</strong>
+      <span>No flip flops. Boots strongly recommended in winter or after wet weather. Consider a spare pair of trainers.</span>
+    </div>
+    <div class="bring-card">
+      <strong>Warm clothing</strong>
+      <span>In winter this is critical. The airfield is exposed - subtract 3-4&deg;C from the forecast. Layers, hat, scarf and gloves recommended.</span>
+    </div>
+    <div class="bring-card">
+      <strong>Suncream</strong>
+      <span>Essential in summer. The cockpit offers no shade.</span>
+    </div>
+    <div class="bring-card">
+      <strong>Sunglasses</strong>
+      <span>Strongly recommended year-round. Sun glare is noticeably stronger in a glider cockpit.</span>
+    </div>
+    <div class="bring-card">
+      <strong>Logbooks & Licences</strong>
+      <span>Solo pilots (glider, PPL, or otherwise) - don't forget yours!</span>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="day-section">
+  <h3>New pilots</h3>
+  <div class="notice-box">
+    <p class="notice-label">Please note</p>
+    <p>You will need to sign a membership form before you fly. If you are under 18, a parent's or guardian's signature is required. Please email us at <a href="mailto:su-gliding@bath.ac.uk">su-gliding@bath.ac.uk</a> before signing up.</p>
+    <p>There are loading limits on our gliders. Pilots must weigh between <strong>45 kg / 7 stone</strong> and <strong>102 kg / 16 stone</strong>. If you are approaching either limit, please email us before booking a trip.</p>
+  </div>
+</div>

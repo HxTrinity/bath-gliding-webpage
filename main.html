@@ -1,0 +1,169 @@
+<h1>Welcome to the University of Bath Gliding Club!</h1>
+
+<p><strong>Hey!</strong> Welcome, or welcome back, to the University of Bath! Are you wondering what crazy hobby to take up next, are you an aviation fanatic, or do you simply want to have an unusual day out? Look no further - the Gliding Club can cater for all of those!</p>
+
+<p>Have a look through our website and check out our Instagram - <a href="https://www.instagram.com/unibathgliding/">@unibathgliding</a> - to find out more about us. If you have any questions, drop us an email at <a href="mailto:su-gliding@bath.ac.uk">su-gliding@bath.ac.uk</a>.</p>
+
+<hr />
+
+<style>
+  .mem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 1rem 0;
+  }
+  .mem-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1.25rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .mem-card.mem-card-taster { border-top: 4px solid #0ea5e9; }
+  .mem-card.mem-card-solo { border-top: 4px solid #7c3aed; }
+  .mem-card-taster:hover { border-color: #0ea5e9; box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1); }
+  .mem-card-solo:hover { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1); }
+  .mem-card:active { transform: scale(0.985); }
+  .mem-badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    width: fit-content;
+  }
+  .mem-card-taster .mem-badge { background: #e0f2fe; color: #0369a1; }
+  .mem-card-solo .mem-badge { background: #f5f3ff; color: #5b21b6; }
+  .mem-title { font-size: 17px; font-weight: 600; margin: 0; color: #000; }
+  .mem-desc { font-size: 14px; color: #000; line-height: 1.5; margin: 0; flex: 1; }
+  .mem-cta { font-size: 13px; font-weight: 500; margin-top: 4px; }
+  .mem-card-taster .mem-cta { color: #0369a1; }
+  .mem-card-solo .mem-cta { color: #7c3aed; }
+
+  .wwd-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    padding: 1rem 0;
+  }
+  .wwd-card {
+    padding: 1.1rem 1.25rem;
+    border-radius: 10px;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+  }
+  .wwd-card strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0c4a6e;
+    margin-bottom: 6px;
+  }
+  .wwd-card span { font-size: 13px; color: #075985; line-height: 1.6; }
+
+  .socials-row { display: flex; flex-wrap: wrap; gap: 10px; padding: 0.75rem 0; }
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .social-btn:hover { background: #f9fafb; border-color: #d1d5db; }
+  .social-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+  .logo-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding: 0.75rem 0; }
+  .logo-row a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    transition: border-color 0.15s;
+  }
+  .logo-row a:hover { border-color: #93c5fd; }
+  .logo-row img { display: block; }
+</style>
+
+<h3>Types of Flying Available</h3>
+<p>This year, we have two types of flying available:</p>
+
+<div class="mem-grid">
+  <a class="mem-card mem-card-taster" href="https://www.thesubath.com/gliding/tasterflight/">
+    <span class="mem-badge">£50 Per Flight</span>
+    <p class="mem-title">Taster Flight</p>
+    <p class="mem-desc">Never flown before? An introductory flight covering the basics. Includes flight time, instruction, and transport.</p>
+    <span class="mem-cta">Find out more →</span>
+  </a>
+  <a class="mem-card mem-card-solo" href="https://www.thesubath.com/gliding/annualmembership/">
+    <span class="mem-badge">Annual Membership</span>
+    <p class="mem-title">Solo Training & Licensed Pilots</p>
+    <p class="mem-desc">Train regularly and work towards going solo or obtaining your SPL.</p>
+    <span class="mem-cta">Find out more →</span>
+  </a>
+</div>
+
+<hr />
+
+<h3>What We Do</h3>
+
+<div class="wwd-grid">
+  <div class="wwd-card">
+    <strong>Flying from just 25 miles away</strong>
+    <span>We fly from Bath Wilts and North Dorset Gliding Club. The club has 3 two-seater and 3 single-seater gliders, a touring motor glider, winch launch, and aerotows.</span>
+  </div>
+  <div class="wwd-card">
+    <strong>The cheapest way to fly</strong>
+    <span>All instruction is given free by volunteers. You can learn to fly gliders for a very reasonable price and work through the syllabus towards flying solo.</span>
+  </div>
+  <div class="wwd-card">
+    <strong>Much more than just flying</strong>
+    <span>Soar over beautiful countryside, compete in inter-university competitions, and build skills towards solo flight. The sky is no longer the limit!</span>
+  </div>
+</div>
+
+<hr />
+
+<h3>Socials</h3>
+
+<div class="socials-row">
+  <a class="social-btn" href="https://www.instagram.com/unibathgliding/" target="_blank">
+    <span class="social-dot" style="background:#e1306c;"></span>
+    Instagram
+  </a>
+  <a class="social-btn" href="https://www.linkedin.com/company/112301838" target="_blank">
+    <span class="social-dot" style="background:#0a66c2;"></span>
+    LinkedIn
+  </a>
+  <a class="social-btn" href="https://chat.whatsapp.com/DRev74D1S9kDXHnqPQ604X?mode=gi_t" target="_blank">
+    <span class="social-dot" style="background:#25d366;"></span>
+    WhatsApp
+  </a>
+</div>
+
+<hr />
+
+<h3>Host Club &amp; More Info</h3>
+<p>We are hosted by the lovely people at Bath Wilts and North Dorset Gliding Club!</p>
+
+<div class="logo-row">
+  <a href="https://www.bwnd.co.uk/" target="_blank">
+    <img alt="Bath Wilts and N Dorset Gliding Club" src="https://www.bwnd.co.uk/images/graphics/clublogo3.png" width="295" />
+  </a>
+  <a href="https://www.gliding.co.uk/" target="_blank">
+    <img alt="British Gliding Association" src="https://members.gliding.co.uk/wp-content/uploads/sites/3/2021/01/thumbnail.jpg" width="240" />
+  </a>
+</div>

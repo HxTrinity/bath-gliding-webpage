@@ -1,0 +1,157 @@
+<style>
+  .location-section { margin: 1.5rem 0; }
+
+  .info-card {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #1d4ed8;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .info-card p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.8;
+    margin: 0 0 0.75rem;
+  }
+  .info-card p:last-child { margin: 0; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin: 1.25rem 0;
+  }
+  .stat-item {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    text-align: center;
+  }
+  .stat-item strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0c4a6e;
+    margin-bottom: 4px;
+  }
+  .stat-item span {
+    font-size: 13px;
+    color: #075985;
+    line-height: 1.4;
+  }
+
+  .map-wrap {
+    margin: 1.25rem 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+  }
+  .map-wrap img { display: block; width: 100%; height: auto; }
+
+  .weather-card {
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #0ea5e9;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  .weather-card p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.8;
+    margin: 0 0 0.75rem;
+  }
+  .weather-card p:last-child { margin: 0; }
+
+  .rasp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0.75rem 0;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #0ea5e9;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .rasp-link:hover { background: #0284c7; }
+
+  .blipspot-steps {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 1rem;
+  }
+  .blipspot-steps p {
+    font-size: 15px;
+    color: #075985;
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+  }
+  .blipspot-steps ol {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.8;
+  }
+</style>
+
+<h2>Where We Fly - The Park ✈️</h2>
+
+<div class="info-card">
+  <p>Our host club, Bath Wilts and North Dorset GC, flies from a small airfield about 40 minutes south of Bath called The Park. Situated on the top of a hill on the very edge of Salisbury Plain, the club commands beautiful views over the Wiltshire countryside. The view from the ground is beautiful; the view from the air is spectacular.</p>
+  <p>On a clear day at around 2,500 to 3,000ft you can see both the Bristol Channel and the south coast, with famous landmarks such as Longleat and Stourhead within range of the airfield.</p>
+  <p>BWNDGC formed in 1963 and has a large hangar sat off to one side of a 1,300m grass runway. Bordered at one end by trees and the other by open fields, it is one of the best grass strips in the south of England.</p>
+
+  <div class="stat-grid">
+    <div class="stat-item">
+      <strong>40 min</strong>
+      <span>from Bath</span>
+    </div>
+    <div class="stat-item">
+      <strong>7</strong>
+      <span>gliders on site</span>
+    </div>
+    <div class="stat-item">
+      <strong>1,300m</strong>
+      <span>grass runway</span>
+    </div>
+    <div class="stat-item">
+      <strong>Est. 1963</strong>
+      <span>BWNDGC founded</span>
+    </div>
+  </div>
+
+  <div class="map-wrap">
+    <img alt="Map of The Park airfield" src="/pageassets/gliding/the_park/map.png" />
+  </div>
+</div>
+
+<hr />
+
+<h2>Weather ⛅</h2>
+
+<div class="weather-card">
+  <p>The runway at The Park runs almost perfectly East to West (Runway 08/26), so there is often a crosswind to contend with. RASP is a forecasting website commonly used by glider pilots to plan flying days.</p>
+
+  <a class="rasp-link" href="https://rasp.stratus.org.uk/index.php/blipspot-maker" target="_blank" rel="noopener noreferrer">Open RASP forecast</a>
+
+  <div class="blipspot-steps">
+    <p>How to get your forecast:</p>
+    <ol>
+      <li>Select <strong>The Park (PRK)</strong> as the BGA turning point</li>
+      <li>Select the day you want the forecast for (up to 7 days ahead)</li>
+      <li>Several Blipspots will generate, showing cloud base, surface and upper wind speeds, rainfall, and thermal potential</li>
+    </ol>
+  </div>
+</div>
